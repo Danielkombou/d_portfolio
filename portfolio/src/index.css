@@ -1,0 +1,221 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins' sans-serif;
+  box-sizing: border-box;
+}
+/* 
+:root{
+  --background-color: #f6f6f6;
+  --foreground-color: #883cff;
+  --primary-text-color: #ffffff;
+  --toggle-bg: #f8eb9d;
+  --toggl-fg: #ffd000;
+} */
+/* [data-theme='dark'] {
+  --background-color: #8a8a8a;
+  --foreground-color: #567aff;
+  --primary-text-color: #f6f6f6;
+  --secondary-text-color: #0a0a0a;
+  --toggle-bg: #283452;
+  --toggle-fg: #80a6ff;
+} */
+
+/* body{
+  background-color: #ccc;
+} */
+
+/* ------------ Introduction --------- */
+.intro div h1{
+font-family: Inter;
+font-size: 60px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: -0.02em;
+text-align: left;
+}
+.intro div p{
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+}
+.curiuos-img img, .curiuos-note img{
+  border-radius: 6px;
+  width: 20%;
+}
+.intro .curiuos-note img{
+  /* position: absolute; */
+  left: 50%;
+}
+.intro .curiuos-note{
+  flex: 1;
+}
+.intro .curiuos-img{
+  flex: 2;
+}
+.skills{
+  margin: 16px 80px;
+  display: flex;
+  justify-content: space-between;
+  background: #f0f0f0;
+  border-radius: 42px;
+  padding: 20px;
+  margin: 20px 100px;
+}
+
+
+.intro{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+@media screen  and (max-width:650px){
+  .intro{
+    flex-direction: column;
+  }
+
+  .intro .curiuos-note{
+    width: 90%;
+  }
+  
+  .intro .curiuos-img{
+    width: 90%;
+  }
+  .intro .curiuos-img img{
+    /* width: 30%; */
+  }
+  
+}
+.intro .curiuos-img{
+
+  flex: 1;
+
+}
+.intro .curiuos-img img{
+  width: 100%;
+  height: auto;
+ 
+}
+.intro .curiuos-note{
+ flex: 2;
+}
+.testimonials, .download{
+  /* margin:  80px; */
+  min-height: 100vh;
+}
+.work{
+  /* margin:  80px; */
+}
+.incard{
+  font-size: 15px;
+  font: italic;
+  font-weight: 300;
+}
+button{
+    text-align: center;
+    background: #9a9a9a;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    position: relative;
+    left: 47%;
+    color: #585757;
+    font-weight: 500;
+}
+
+/* ---------- Testimonial page ---------- */
+
+.testimony{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+/* ------- Contact page ------- */
+
+.address{
+  width: 50%;
+  padding: 30px;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  background: #585757;
+  border-radius: 12px;
+  margin:  80px;
+}
+label{
+  font-weight: 300;
+  color: #dbe8eb;
+}
+input{
+  padding: 5px;
+  background: transparent;
+  outline: none;
+  border: 0;
+}
+input:placeholder-shown{
+  color: #FFFFFF; 
+}
+hr{
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+
+
+/* -----menu ----- */
+
+
+
+.appreciations{
+    background: #fff;
+    border-radius: 15px;
+    width: 25%;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.appreciations h2{
+  margin: 20px;
+  color: #ccc;
+}
+
+
+
+
+
+
+/* -------------- view on smaller screens ---------- */
+
+@media (max-width: 800px) {
+  .intro{
+    flex-direction: column;
+  }
+  .skills{
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimony{
+    flex-direction: column;
+  }
+  .appreciations{
+    width: 100%;
+    align-content: space-between;
+  }
+}
+
+
+
+

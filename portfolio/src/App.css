@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --background-color: #141414;
+    --text-color: #ffffff;
+    --fg-color: #ccc;
+    --fg-text: #000000;
+}
+.app {
+    max-height: 100vh;
+}
+
+.theme-dark {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.theme-light {
+    background-color: var(--fg-color);
+    color: var(--fg-text);
+}
+
